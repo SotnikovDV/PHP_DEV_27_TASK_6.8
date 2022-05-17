@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>JS-Start. 2 задача</title>
+</head>
+
+<body>
+    <header>
+        <h1>SkillFactory » PHP_DEV27 » Модуль 6 (Старт в JS)</h1>
+        <p>
+            <strong> <a href="../index.html">Практическая работа</a> » Задача 2</strong>
+        </p>
+    </header>
+    <hr>
+    <!-- Простой попап диалог с формой -->
+    <dialog id="alertDialog">
+        <form method="dialog">
+            <section>
+                <p>
+                    <b>Window.prompt()</b><br>
+                    Метод <a href="https://developer.mozilla.org/ru/docs/Web/API/Window/prompt"
+                        target="_blank">Window.prompt()</a> отображает диалоговое окно с необязательным запросом на ввод
+                    текста.
+                </p>
+                <p>
+                    <b>Синтаксис</b><br><br>
+                    <code>result = window.prompt(message, default);</code><br><br>
+                    <b>result</b> — это строка, содержащая текст, поступивший от пользователя или null.<br>
+                    <b>message</b> — это строка текста, которая показывается пользователю. Этот параметр является
+                    необязательным и может быть пропущен если в окне prompt ничего не показывать.<br>
+                    <b>default</b> — это строка, содержащая значение по умолчанию, отображаемое в поле ввода текста. Это
+                    необязательный параметр. Обратите внимание, что в Internet Explorer 7 и 8, если вы не укажете этот
+                    параметр, строка "underfined" будет значением по умолчанию.
+                </p>
+            </section>
+            <!--<menu> -->
+                <button id="dlgSubmitBtn" type="submit" autofocus>Закрыть</button>
+            <!--</menu> -->
+        </form>
+    </dialog>
+
+    <main>
+        <h3 id="consoleLog" class="methodHandler">
+            console.log()
+        </h3>
+        <p>
+        <div class="codeTitle"> Пример:</div>
+        <code>
+                console.log('Это тот блок');
+        </code>
+        </p>
+        <h3 id="alert" class="methodHandler">
+            alert()
+        </h3>
+        <div class="codeTitle"> Пример:</div>
+        <code>
+                alert('Внимание, ошибка!');
+        </code>
+        <h3 id="prompt" class="methodHandler">
+            prompt()
+        </h3>
+        <div class="codeTitle"> Пример:</div>
+        <code>
+                result = prompt('Введите число от 0 до 99', 0);
+        </code>
+    </main>
+    <footer>
+        <hr>
+        <a href="../index.html">На главную</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
