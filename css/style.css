@@ -76,7 +76,6 @@ ul li a:hover {
 }
 
 #alertDialog button {
-    /*width: 70px;*/
     display: block;
     color: #6C6C6C;
     padding: 5px 15px;
@@ -97,12 +96,27 @@ ul li a:hover {
     background-color: #979797;
 }
 
-#trafficLight {
+#trafficLightBox {
+    width: 120px;
+    height: 320px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #979797;
+    box-shadow: 3px 3px #d1cfcd;
+    border-radius: 3%;
+}
+
+.trafficLight {
     width: 100px;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
     height: 100px;
     border-radius: 50%;
     background: black;
-    box-shadow: 3px 3px #d1cfcd;
 }
 
 #duplicateField {

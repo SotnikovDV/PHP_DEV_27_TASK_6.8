@@ -1,25 +1,25 @@
-const trafficLightEl = document.querySelector('#trafficLight');
+const trafficLight0 = document.querySelector('#trafficLight0');
+const trafficLight1 = document.querySelector('#trafficLight1');
+const trafficLight2 = document.querySelector('#trafficLight2');
+let currentColor = 0;
 
-function makeGreen() {
-    trafficLightEl.style.background = ('green');
-    trafficLightEl.removeEventListener('click', makeGreen);
-    trafficLightEl.addEventListener('click', makeYellow);
+function switchLight(event){
+    trafficLight0.style.background = ('black');
+    trafficLight1.style.background = ('black');
+    trafficLight2.style.background = ('black');
+
+    switch (currentColor) {
+        case 0: trafficLight0.style.background = ('green'); break;
+        case 1: trafficLight1.style.background = ('yellow'); break;
+        case 2: trafficLight2.style.background = ('red'); break;
+    }
+
+    currentColor = currentColor + 1;
+    if (currentColor > 2) {
+        currentColor = 0;
+    }
 }
 
-trafficLightEl.addEventListener('click', makeGreen);
-
-function makeYellow() {
-    trafficLightEl.style.background = ('yellow');
-    trafficLightEl.removeEventListener('click', makeYellow);
-    trafficLightEl.addEventListener('click', makeRed);
-}
-
-trafficLightEl.addEventListener('click', makeYellow);
-
-function makeRed() {
-    trafficLightEl.style.background = ('red');
-    trafficLightEl.removeEventListener('click', makeRed);
-    trafficLightEl.addEventListener('click', makeGreen);
-}
-
-trafficLightEl.addEventListener('click', makeRed);
+trafficLight0.addEventListener('click', switchLight);
+trafficLight1.addEventListener('click', switchLight);
+trafficLight2.addEventListener('click', switchLight);
