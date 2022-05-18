@@ -1,7 +1,11 @@
 # PHP_DEV_27_TASK_6.8
 ***SkillFactory Group PHP_DEV_27 Task 6.8 - JS start***
 
-## 1. Use
+## 1. Project description 
+
+Developed as a practical task in the course "PHP Developer"
+
+## 2. Use
 
 Load all files and put it in server root
 
